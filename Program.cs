@@ -54,7 +54,7 @@ namespace D14_ovn_1_1_uppg_8t15
                 tyskland,
                 sanMarino,
                 new Land()
-                { 
+                {
                     namn = "Danmark",
                     styrestyp = "monarki",
                     huvudstad = "Köpenhamn",
@@ -89,11 +89,37 @@ namespace D14_ovn_1_1_uppg_8t15
             }
             // Uppg 13:
             Console.WriteLine("==== Lista alla republiker ====");
-            for(int i = 0; i < länder.Length; i++)
+            for (int i = 0; i < länder.Length; i++)
             {
                 if (länder[i].styrestyp == "republik")
                     Console.WriteLine($"{i}: {länder[i].namn}" /* Uppg 14! */);
             }
+            // Uppg 15:
+            int min = -1;
+            int max = -1;
+            for (int i = 0; i < länder.Length; i++)
+            {
+                if (länder[i].styrestyp == "republik")
+                {
+                    if (min == -1)
+                    {
+                        min = i;
+                        max = i;
+                    }
+                    else
+                    {
+                        if (länder[i].invånarantal < länder[min].invånarantal)
+                            min = i;
+                        if (länder[i].invånarantal > länder[max].invånarantal)
+                            max = i;
+                    }
+                }
+            }
+            // Console.WriteLine($"{min} vs. {max}");
+            Console.WriteLine("==== Republik med minsta invånarantal ====");
+            länder[min].Print();
+            Console.WriteLine("==== Republik med största invånarantal ====");
+            länder[max].Print();
         }
     }
 }
