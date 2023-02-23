@@ -46,6 +46,42 @@ namespace D14_ovn_1_1_uppg_8t15
             sverige.Print();
             tyskland.Print();
             sanMarino.Print();
+
+            // Uppg 11:
+            Land[] länder = new Land[7]
+            {
+                sverige,
+                tyskland,
+                sanMarino,
+                new Land()
+                { 
+                    namn = "Danmark",
+                    styrestyp = "monarki",
+                    huvudstad = "Köpenhamn",
+                    invånarantal = 5928364
+                },
+                new Land()
+                {
+                    namn = "Italien",
+                    styrestyp = "republik",
+                    huvudstad = "Rom",
+                    invånarantal = 58853482
+                },
+                new Land()
+                {
+                    namn = "Tjekien",
+                    styrestyp = "republik",
+                    huvudstad = "Prag",
+                    invånarantal = 10551219
+                },
+                new Land()
+                {
+                    namn = "Rumänien",
+                    styrestyp = "republik",
+                    huvudstad = "Bukarest",
+                    invånarantal = 19760314
+                },
+            };
         }
     }
 }
