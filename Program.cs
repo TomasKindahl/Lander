@@ -9,6 +9,14 @@ namespace D14_ovn_1_1_uppg_8t15
         {
             public string namn, styrestyp, huvudstad;
             public int invånarantal;
+            // Uppg 10:
+            public void Print()
+            {
+                Console.WriteLine($"Land: {namn}");
+                Console.WriteLine($"  styrestyp: {styrestyp}");
+                Console.WriteLine($"  huvudstad: {huvudstad}");
+                Console.WriteLine($"  invånarantal: {invånarantal}");
+            }
         }
         static void Main(string[] args)
         {
@@ -34,6 +42,10 @@ namespace D14_ovn_1_1_uppg_8t15
                 huvudstad = "San Marino",
                 invånarantal = 33600
             };
+            // Uppg 10:
+            sverige.Print();
+            tyskland.Print();
+            sanMarino.Print();
         }
     }
 }
