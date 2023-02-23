@@ -87,6 +87,13 @@ namespace D14_ovn_1_1_uppg_8t15
             {
                 L.Print();
             }
+            // Uppg 13:
+            Console.WriteLine("==== Lista alla republiker ====");
+            for(int i = 0; i < länder.Length; i++)
+            {
+                if (länder[i].styrestyp == "republik")
+                    Console.WriteLine(länder[i].namn);
+            }
         }
     }
 }
