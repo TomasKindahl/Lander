@@ -92,7 +92,7 @@ namespace D14_ovn_1_1_uppg_8t15
             for(int i = 0; i < länder.Length; i++)
             {
                 if (länder[i].styrestyp == "republik")
-                    Console.WriteLine(länder[i].namn);
+                    Console.WriteLine($"{i}: {länder[i].namn}" /* Uppg 14! */);
             }
         }
     }
