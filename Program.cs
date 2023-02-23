@@ -82,6 +82,7 @@ namespace D14_ovn_1_1_uppg_8t15
                     invånarantal = 19760314
                 },
             };
+            // Uppg 12:
             foreach (Land L in länder)
             {
                 L.Print();
